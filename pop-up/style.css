@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@ body{
     background-color: rgb(185, 247, 185);
 }
 
-.button{
+.button {
     position: relative;
     padding: 15px 20px;
     font-size: 1.5rem;
@@ -26,41 +26,37 @@ body{
     transition: 0.5s;
 }
 
-.button:hover{
+.button:hover {
     letter-spacing: 0.1rem;
 }
 
-#newsLetter{
+#newsLetter {
     position: fixed;
     top: -100%;
-    left:50% ; 
-    transform: translate(-50%, 50%);
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajuste aqui */
     background-color: #fff;
-    z-index: 1000; ;
+    z-index: 1000;
     width: 450px;
-    padding: 80px 50px 50px ;
+    padding: 80px 50px 50px;
     transition: 0.5s;
     border-radius: 4px;
-    visibility: visible; 
+    visibility: visible;
 }
-#newsLetter.active{
+
+#newsLetter.active {
     visibility: visible;
     top: 50%;
 }
 
-#newsLetter h2{
+#newsLetter h2 {
     text-align: center;
     color: #5C4800;
     font-size: 24px;
-    margin: 20px 10ox;
+    margin: 20px 10px;
 }
 
-#newsLetter h2{
-    text-align: center;
-    color: #5C4800;;
-}
-
-#newsLetter .box{
+#newsLetter .box {
     position: relative;
     width: 100%;
     margin-top: 20px;
@@ -69,7 +65,7 @@ body{
     justify-content: center;
 }
 
-input, button{
+input, button {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -78,17 +74,17 @@ input, button{
     font-family: serif;
 }
 
-button{
-    border:none;
+button {
+    border: none;
     width: 150px;
     letter-spacing: 0.1rem;
     background-color: rgb(185, 247, 185);
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
-} 
+}
 
-.close{
+.close {
     position: absolute;
     cursor: pointer;
     top: 15px;
