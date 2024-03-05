@@ -90,3 +90,6 @@ button {
     top: 15px;
     right: 20px;
 }
+.hidden {
+    display: none;
+}
